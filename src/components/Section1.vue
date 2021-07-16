@@ -10,7 +10,7 @@
 
             <div class="container--container-box--box" v-for="(item, index) in items" :key="index">
                 
-                <img class="container--container-box--box--image" :src="require(`../assets/img/${item.img}`)" alt="">
+                <img class="container--container-box--box--image" :src="require(`@/assets/img/${item.img}`)" :alt="item.title">
                 
                 <h3 class="container--container-box--box--title">{{item.title}}</h3>
                 
@@ -58,6 +58,9 @@
         text-align: center;
         padding: 90px 0px;
         color: $Raven;
+        width: 90%;
+        margin: 0 auto;
+
         .container--title {
             font-size: 40px;
             font-weight: 300;

@@ -56,14 +56,7 @@
     @import '@/style/variabili.scss';
     @import '@/style/mixins.scss';
 
-    .container {
-
-        .container--section123{
-            width: 90%;
-            margin: 0 auto;
-        }
-
-    }
+  
 
 
 </style>

@@ -75,6 +75,11 @@
                     color: #ffffff;
                     text-decoration: none;
                     text-transform: uppercase;
+                    font-size: 14px;
+
+                    &:hover, &.active {
+                        color: #39afbb;
+                    }
                 }
 
             }

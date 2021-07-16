@@ -72,13 +72,13 @@
                list-style: none;
 
                 .container--menu--list--items {
-                    color: #ffffff;
+                    color: $White;
                     text-decoration: none;
                     text-transform: uppercase;
                     font-size: 14px;
 
                     &:hover, &.active {
-                        color: #39afbb;
+                        color: $Pelorous2;
                     }
                 }
 

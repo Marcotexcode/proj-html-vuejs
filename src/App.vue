@@ -51,9 +51,13 @@ export default {
   @import '@/style/mixins.scss';
 
   .container--head-jumbo {
+    
     background-image: url("./assets/img/header-image-homepage.jpg");
+    
     @include backgroundImg ();
+    
     height: 700px;
+    
   }
 
 

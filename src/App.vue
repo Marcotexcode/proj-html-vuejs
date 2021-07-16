@@ -1,6 +1,6 @@
 <template>
 
-  <div id="app">
+  <div class="container" id="app">
     
     <div class="container--head-jumbo">
 
@@ -50,15 +50,19 @@ export default {
   @import '@/style/variabili.scss';
   @import '@/style/mixins.scss';
 
-  .container--head-jumbo {
-    
-    background-image: url("./assets/img/header-image-homepage.jpg");
-    
-    @include backgroundImg ();
-    
-    height: 700px;
-    
-  }
+  .container {
+    width: 100%;
 
+    .container--head-jumbo {
+    
+      background-image: url("./assets/img/header-image-homepage.jpg");
+      
+      @include backgroundImg ();
+      
+      height: 700px;
+    
+    }
+
+  }
 
 </style>

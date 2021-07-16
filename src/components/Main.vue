@@ -2,18 +2,49 @@
   
     <div class="container">
 
-        <h2>Main</h2>
+
+        <div class="container--section123">
+
+            <Section1/>
+            <Section2/>
+            <Section3/>
+
+        </div>
+        
+        <Section4/>
+        <Section5/>
+
 
     </div>
 
 </template>
 
 
-<script>               
+<script>  
+
+    import Section1 from '@/components/Section1.vue'
+    import Section2 from '@/components/Section2.vue'
+    import Section3 from '@/components/Section3.vue'
+    import Section4 from '@/components/Section4.vue'
+    import Section5 from '@/components/Section5.vue'
+
+
+
+
 
     export default {
         
-        name: 'Main'
+        name: 'Main',
+
+        components: {
+
+            Section1,
+            Section2,
+            Section3,
+            Section4,
+            Section5
+
+        }
 
     }
 
@@ -25,6 +56,14 @@
     @import '@/style/variabili.scss';
     @import '@/style/mixins.scss';
 
+    .container {
+
+        .container--section123{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+    }
 
 
 </style>

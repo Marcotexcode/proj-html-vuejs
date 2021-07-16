@@ -80,10 +80,12 @@
 
             .container--container-box--box {
 
-                width: 275px;
+                width: 290px;
 
                 .container--container-box--box--title {
                     margin: 20px 0px;
+                    text-transform: uppercase;
+                    font-size: 18px;
                 }
 
                 .container--container-box--box--text {

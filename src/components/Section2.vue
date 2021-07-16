@@ -83,6 +83,7 @@
             padding: 90px;
             width: 90%;
             margin: 0 auto;
+            color: $Raven;
 
             .container--title {
                 text-transform: uppercase;
@@ -94,7 +95,7 @@
             .container--space {
                 width: 30%;
                 margin: 35px auto;
-                border: 1px solid #000;       
+                border: 1px solid $FrenchGray;  
             }
 
             .container--text {

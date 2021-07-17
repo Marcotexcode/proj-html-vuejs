@@ -1,8 +1,8 @@
 <template>
+
     <div class="conteiner-general">
 
         <div class="container">
-
 
             <img src="@/assets/img/icon-5.png" alt="meet our doctors">
 
@@ -18,7 +18,7 @@
 
                     <div class="image-container">
                         
-                    <img class="container--container-box--box--image" :src="require(`@/assets/img/${item.img}`)" :alt="item.title">
+                        <img class="container--container-box--box--image" :src="require(`@/assets/img/${item.img}`)" :alt="item.title">
 
                     </div>   
                     
@@ -41,7 +41,9 @@
             </div>
 
         </div>
+
     </div>
+
 </template>
 
 
@@ -78,17 +80,10 @@
         background-color: $Gallery;
 
         .container {
-            width: 100%;
-            text-align: center;
-            padding: 90px;
-            width: 90%;
-            margin: 0 auto;
-            color: $Raven;
+            @include containerCenter-general($Raven);
 
             .container--title {
                 text-transform: uppercase;
-                font-size: 40px;
-                font-weight: 300;
                 margin: 20px 0px;
             }
 
@@ -96,11 +91,6 @@
                 width: 30%;
                 margin: 35px auto;
                 border: 1px solid $FrenchGray;  
-            }
-
-            .container--text {
-                line-height: 2.5;
-                margin: 20px 0px;
             }
 
             .container--container-box {
@@ -113,7 +103,7 @@
 
 
                 .container--container-box--box {
-                    width: 340px;
+                    width: 380px;
                     background-color: #fff;
 
                     .image-container {
@@ -136,11 +126,10 @@
                         .container--container-box--box--text {
                             line-height: 2.5;
                             font-size: 15px;
-
                         }
 
                         .social {
-                            font-size: 30px;
+                            font-size: 35px;
                             margin-right: 10px;
                         }
 
@@ -165,9 +154,5 @@
         }
 
     }
-
-    
-
-
 
 </style>

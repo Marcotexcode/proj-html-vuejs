@@ -54,22 +54,7 @@
     @import '@/style/mixins.scss';
 
     .container {
-        width: 100%;
-        text-align: center;
-        padding: 90px 0px;
-        color: $Raven;
-        width: 90%;
-        margin: 0 auto;
-
-        .container--title {
-            font-size: 40px;
-            font-weight: 300;
-        }
-
-        .container--text {
-            line-height: 2.5;
-            margin: 20px 0px;
-        }
+        @include containerCenter-general($Raven);
 
         .container--container-box {
             width: 100%;
@@ -79,7 +64,6 @@
             margin-top: 90px;
 
             .container--container-box--box {
-
                 width: 290px;
 
                 .container--container-box--box--title {

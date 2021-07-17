@@ -27,8 +27,7 @@
 
 <script>               
 
-        import MenuItems from '@/data/MenuItems.js';
-
+    import MenuItems from '@/data/MenuItems.js';
 
     export default {
         
@@ -80,20 +79,17 @@
                     &:hover, &.active {
                         color: $Pelorous2;
                     }
+
                 }
 
             }
 
             .container--list--btn {
-
-                @include btnPelorous();
-                    
+                @include btnPelorous();                   
             }
 
         }
 
     }
-
-
 
 </style>

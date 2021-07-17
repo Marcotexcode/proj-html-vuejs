@@ -44,24 +44,18 @@
             font-weight: 300;
 
             .container--title--color-title {
-
                 color: $pelorousVibrant;
-
             }
 
         }
 
         .container--text {
-
             color: $White;
-            margin: 50px 0px;
-            
+            margin: 50px 0px;           
         }
 
         .container--btn {
-
-            @include btnPelorous();
-                    
+            @include btnPelorous();                    
         }
         
     }

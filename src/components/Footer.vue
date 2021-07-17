@@ -25,6 +25,4 @@
     @import '@/style/variabili.scss';
     @import '@/style/mixins.scss';
 
-
-
 </style>

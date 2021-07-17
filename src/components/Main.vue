@@ -2,8 +2,7 @@
   
     <div class="container">
 
-
-        <div class="container--section123">
+        <div>
 
             <Section1/>
             <Section2/>
@@ -13,7 +12,6 @@
         
         <Section4/>
         <Section5/>
-
 
     </div>
 
@@ -27,10 +25,6 @@
     import Section3 from '@/components/Section3.vue'
     import Section4 from '@/components/Section4.vue'
     import Section5 from '@/components/Section5.vue'
-
-
-
-
 
     export default {
         
@@ -55,8 +49,5 @@
 
     @import '@/style/variabili.scss';
     @import '@/style/mixins.scss';
-
-  
-
 
 </style>

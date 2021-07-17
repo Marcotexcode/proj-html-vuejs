@@ -74,3 +74,35 @@
     
 
 }
+
+
+@mixin containerBox($wBox) {
+
+    .container--container-box {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 90px;
+
+        .container--container-box--box {
+            width: $wBox;
+
+            .container--container-box--box--title {
+                margin: 20px 0px;
+                text-transform: uppercase;
+                font-size: 18px;
+            }
+
+            .container--container-box--box--text {
+                line-height: 2.5;
+                font-size: 13.5px;
+
+            }
+
+        }
+
+    }
+
+}

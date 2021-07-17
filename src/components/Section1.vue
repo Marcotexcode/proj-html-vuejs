@@ -56,32 +56,8 @@
     .container {
         @include containerCenter-general($Raven);
 
-        .container--container-box {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 90px;
-
-            .container--container-box--box {
-                width: 290px;
-
-                .container--container-box--box--title {
-                    margin: 20px 0px;
-                    text-transform: uppercase;
-                    font-size: 18px;
-                }
-
-                .container--container-box--box--text {
-                    line-height: 2.5;
-                    font-size: 15px;
-
-                }
-
-            }
-
-        }
-
+        @include containerBox(285px);
+        
     }
 
 </style>

@@ -94,38 +94,34 @@
             }
 
             .container--container-box {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 90px;
-            text-align: left;
-
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 90px;
+                text-align: left;
 
                 .container--container-box--box {
-                    width: 380px;
+                    width: 300px;
                     background-color: #fff;
 
-                    .image-container {
-
-                        .container--container-box--box--image {
-                            width: 100%;               
-                        
-                        }
-
+                    .container--container-box--box--image {
+                        width: 100%;                                       
                     }
-                    
+
                     .item-container {
                         padding: 20px;
 
                         .container--container-box--box--title {
                             margin: 20px 0px;
                             text-transform: uppercase;
+                            font-size: 18px;
                         }
 
                         .container--container-box--box--text {
                             line-height: 2.5;
-                            font-size: 15px;
+                            font-size: 13.5px;
                         }
 
                         .social {

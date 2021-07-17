@@ -24,7 +24,6 @@
 
         </div>
 
-
     </div>
 
 </template>
@@ -33,8 +32,6 @@
 <script>           
 
     import SectionThreItems from '@/data/SectionThreItems.js';
-
-
 
     export default {
         
@@ -64,34 +61,13 @@
 
         @include containerSectionTop-general($Raven);
 
-        .container--container-box {
-            width: 90%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 90px;
+        @include containerBox(350px);
 
-            .container--container-box--box {
-                width: 350px;
-                margin: 20px 0px;
-
-                .container--container-box--box--title {
-                    margin: 20px 0px;
-                    text-transform: uppercase;
-                    font-size: 18px;
-                }
-
-                .container--container-box--box--text {
-                    line-height: 2.5;
-                    font-size: 13.5px;
-
-                }
-
-            }
+        .container--container-box--box {
+            margin: 20px 0px;
 
         }
-
+        
     }
 
 </style>

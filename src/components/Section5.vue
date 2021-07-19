@@ -19,23 +19,24 @@
                 <input class="container-form--input2" placeholder="How can we help?*">
 
                 <button class="container-form--btn">make an appointment</button>
+
             </form>
            
         </div>
 
         <div class="container-slider">
 
-            <Slider/>   
+             
 
-            <div class="container-box--element">
+            <VueSlickCarousel v-bind="settings" class="container-box--element">
 
-                <div class="element" v-for="(item,index) in items"  :key="index" >
+                <div  class="element" v-for="(item,index) in items"  :key="index" >
 
-                    <img class="element--image" :src="require(`@/assets/img/${item.img}`)" :style="{'margin-left': '-' + (100 * contatore) + '%'}" alt="">
+                    <img  class="element--image" :src="require(`@/assets/img/${item.img}`)" alt="">
 
                 </div>  
 
-            </div>
+            </VueSlickCarousel>
 
         </div>
 
@@ -47,53 +48,44 @@
 <script>               
 
     import SectionFive from '@/data/SectionFive.js';
+    import VueSlickCarousel from 'vue-slick-carousel'
+    import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 
     export default {
         
         name: 'Section5',
 
+        components: { 
+
+            VueSlickCarousel 
+
+            },
+            
         data() {
 
             
             return {
 
-                contatore: 0,
+                settings: {
+
+                    "arrows": false,
+                    "dots": false,
+                    "infinite": true,
+                    "slidesToShow": 3,
+                    "slidesToScroll": 1,
+                    "autoplay": true,
+                    "speed": 3000,
+                    "autoplaySpeed": 2000,
+                    "cssEase": "linear"
+
+                },
 
                 items: SectionFive
 
             }
 
         },
-
-       
-        methods: {
-       
-            nextAlbun() {
-        
-                this.contatore++;
-        
-                if (this.contatore > this.items.lenght - 1){
-        
-                    this.contatore = 0
-        
-                } else {
-                   
-                   this.contatore ++
-               
-                }
-        
-                console.log(this.contatore);
-        
-            }
-       
-        },
-
-        mounted() {
-
-            setInterval(this.nextAlbun, 3000)
-  
-        }
-
+    
     }
 
 </script>
@@ -168,18 +160,17 @@
                 z-index: 2;
             
             .container-box--element {
-                width: 50%;
-                border: 1px solid #000;
+                padding: 10px;
+                width: 80%;
                 margin: 0 auto;
                 display: flex;
                 justify-content: center;
                 z-index: 1;
-                // overflow:auto;
+                overflow:hidden;
 
                 .element--image {
                     width: 250px;
-                    margin-right: 30px;
-                    
+                    margin-left: 100px;
                 }
 
             }

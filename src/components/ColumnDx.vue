@@ -34,7 +34,7 @@ export default {
 
   .container {
     width: calc(100% / 3);
-    padding: 20px;
+    padding: 50px;
 
     .container--box--title {
       text-transform: uppercase;
@@ -42,7 +42,7 @@ export default {
     }
 
     .container--box--space {
-      width: 20%;
+      width: 15%;
       margin: 20px 0px;
       background: $Pelorous;
       height: 3px;
@@ -73,7 +73,7 @@ export default {
       width: 100%;
       padding: 10px 30px;
     }
-  }
 
+  }
 
 </style>

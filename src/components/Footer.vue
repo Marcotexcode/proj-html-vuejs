@@ -47,6 +47,8 @@
     
     .container--box {
         display: flex;
+        width: 95%;
+        margin: 0 auto;
     }
 
     .conpyright {

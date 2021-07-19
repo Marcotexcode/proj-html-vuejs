@@ -38,7 +38,7 @@ export default {
 
     .container {
         width: calc(100% / 3);
-        padding: 20px;
+        padding: 50px;
         
         .container--text {
             margin: 20px 0px;

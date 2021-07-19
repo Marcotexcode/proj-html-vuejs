@@ -38,10 +38,8 @@ export default {
   @import '@/style/mixins.scss';
 
   .container {
-    display: inline-block;
     width: calc(100% / 3);
-    padding: 20px;
-    top: 0px;
+    padding: 50px;
 
     .container--title{
       text-transform: uppercase;
@@ -49,7 +47,7 @@ export default {
     }
 
     .container--space {
-      width: 10%;
+      width: 15%;
       margin: 20px 0px;
       background: $Pelorous;
       height: 3px;

@@ -26,8 +26,6 @@
 
         <div class="container-slider">
 
-             
-
             <VueSlickCarousel v-bind="settings" class="container-box--element">
 
                 <div  class="element" v-for="(item,index) in items"  :key="index" >
@@ -120,7 +118,6 @@
                     width: calc(100% / 2 - 20px);
                     height: 40px;
                     margin: 10px 10px;
-
                 }
 
                 .container-form--input2 {
@@ -155,17 +152,15 @@
         }
 
         .container-slider {
-            background-color:$Pelorous2;
+            background: rgb(57,175,187);
+            background: linear-gradient(90deg, rgba(57,175,187,1) 14%, rgba(59,155,189,1) 41%, rgba(68,149,191,1) 52%, rgba(68,139,191,1) 69%);
             padding: 50px;
-                z-index: 2;
             
             .container-box--element {
-                padding: 10px;
                 width: 80%;
                 margin: 0 auto;
                 display: flex;
                 justify-content: center;
-                z-index: 1;
                 overflow:hidden;
 
                 .element--image {

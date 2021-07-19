@@ -110,6 +110,13 @@
                         width: 100%;                                       
                     }
 
+                    .container--container-box--box--image:hover {
+                        transition: 0.5s ease-out;
+                        transform: scale(1.1);
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+                    }
+
                     .item-container {
                         padding: 20px;
 

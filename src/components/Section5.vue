@@ -31,7 +31,7 @@
 
                 <div class="element" v-for="(item,index) in items"  :key="index" >
 
-                    <img class="element--image" :src="require(`@/assets/img/${item.img}`)" alt="">
+                    <img class="element--image" :src="require(`@/assets/img/${item.img}`)" :style="{'margin-left': '-' + (100 * contatore) + '%'}" alt="">
 
                 </div>  
 
@@ -54,12 +54,44 @@
 
         data() {
 
+            
             return {
+
+                contatore: 0,
 
                 items: SectionFive
 
             }
 
+        },
+
+       
+        methods: {
+       
+            nextAlbun() {
+        
+                this.contatore++;
+        
+                if (this.contatore > this.items.lenght - 1){
+        
+                    this.contatore = 0
+        
+                } else {
+                   
+                   this.contatore ++
+               
+                }
+        
+                console.log(this.contatore);
+        
+            }
+       
+        },
+
+        mounted() {
+
+            setInterval(this.nextAlbun, 3000)
+  
         }
 
     }
@@ -133,16 +165,21 @@
         .container-slider {
             background-color:$Pelorous2;
             padding: 50px;
-
+                z-index: 2;
+            
             .container-box--element {
-                width: 70%;
+                width: 50%;
                 border: 1px solid #000;
                 margin: 0 auto;
                 display: flex;
                 justify-content: center;
+                z-index: 1;
+                // overflow:auto;
 
                 .element--image {
                     width: 250px;
+                    margin-right: 30px;
+                    
                 }
 
             }

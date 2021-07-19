@@ -24,7 +24,7 @@
 
 export default {
 
-
+  name: 'ColumnCenter'
 
 }
 
@@ -66,7 +66,7 @@ export default {
 
     .container--permiss {
       width: 100%;
-      background-color: $FrenchGray;
+      background-color: rgb(223, 223, 223);
       padding: 30px;
       text-align: center;
       margin-top: 30px;
@@ -75,13 +75,15 @@ export default {
     .container--permiss--text {
       color: $Raven;
       line-height: 2;
-
+      font-weight: 100;
+      margin: 20px 0px;
     }
 
     .container--permiss--btn {
       @include btnPelorous();
       padding: 10px 30px;
     }
+
   }
 
 </style>

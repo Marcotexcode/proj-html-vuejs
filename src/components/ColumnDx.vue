@@ -72,6 +72,7 @@ export default {
       @include btnPelorous();
       width: 100%;
       padding: 10px 30px;
+      margin: 20px 0%;
     }
 
   }

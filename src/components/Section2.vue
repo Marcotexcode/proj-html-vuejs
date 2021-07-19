@@ -15,7 +15,7 @@
             <div class="container--container-box">
 
                 <div class="container--container-box--box" v-for="(item, index) in items" :key="index">
-
+                    
                     <div class="image-container">
                         
                         <img class="container--container-box--box--image" :src="require(`@/assets/img/${item.img}`)" :alt="item.title">
@@ -80,18 +80,7 @@
         background-color: $Gallery;
 
         .container {
-            @include containerCenter-general($Raven);
-
-            .container--title {
-                text-transform: uppercase;
-                margin: 20px 0px;
-            }
-
-            .container--space {
-                width: 30%;
-                margin: 35px auto;
-                border: 1px solid $FrenchGray;  
-            }
+            @include containerSectionTop-general($Raven,90%);
 
             .container--container-box {
                 width: 90%;
@@ -111,7 +100,7 @@
                     }
 
                     .container--container-box--box--image:hover {
-                        transition: 0.5s ease-out;
+                        transition: 1s ease-out;
                         transform: scale(1.1);
                         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 

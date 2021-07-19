@@ -59,7 +59,7 @@
         
     .container {
 
-        @include containerSectionTop-general($Raven);
+        @include containerSectionTop-general($Raven,90%);
 
         @include containerBox(350px);
 

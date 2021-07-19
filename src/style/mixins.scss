@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
 }
 
+
 @mixin btnPelorous() {
     background-color: $Pelorous;
     color: $White;
@@ -13,19 +14,36 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-
+    border: none;
     &:hover {
         background-color: $Pelorous2;
     }
     
 }
 
+@mixin btnTrasp($background) {
+    background-color: $background;
+    color: $White;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    border: 2px solid $White;
+    margin: 20px 0px;
+
+    &:hover {
+        background-color: $White;
+        color: $background;
+    }
+
+}
+
+
 @mixin containerCenter-general($color) {
 
     width: 100%;
     text-align: center;
     padding: 90px 0px;
-    width: 90%;
     margin: 0 auto;
     color: $color;
 
@@ -42,12 +60,11 @@
 }
 
 
-@mixin containerSectionTop-general($color) {
+@mixin containerSectionTop-general($color,$width) {
 
-    width: 100%;
     text-align: center;
     padding: 90px 0px;
-    width: 90%;
+    width: $width;
     margin: 0 auto;
     color: $color;
 

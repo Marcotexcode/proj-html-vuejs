@@ -2,7 +2,9 @@
   
     <div class="container">
 
-        <h2>footer</h2>
+        <ColumnSx/>
+        <ColumnCenter/>
+        <ColumnDx/>
 
     </div>
 
@@ -11,9 +13,24 @@
 
 <script>               
 
+    import ColumnSx from '@/components/ColumnSx.vue';
+    import ColumnCenter from '@/components/ColumnCenter.vue';
+    import ColumnDx from '@/components/ColumnDx.vue';
+
+
+
+
     export default {
         
-        name: 'Footer'
+        name: 'Footer',
+
+        components: {
+
+            ColumnSx,
+            ColumnCenter,
+            ColumnDx
+
+        }
 
     }
 
@@ -24,5 +41,9 @@
 
     @import '@/style/variabili.scss';
     @import '@/style/mixins.scss';
+    
+    .container {
+        display: flex;
+    }
 
 </style>
